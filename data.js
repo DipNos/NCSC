@@ -97,9 +97,10 @@ const projectData = {
 
     credits: {
         author: "Dipenshu Sahoo & Arnab Bhattacharya",
-        role: "Student Lead & Lead Researcher",
-        guide: "Guide Teacher Name: Mr.Samar Bahadur Mallah",
-        school: "School Name:PM SHRI KV CMERI, CITY CENTRE",
+        role: "Student Leads & Researchers",
+        guide: "Mr. Samar Bahadur Mallah",
+        grade: "Class XI",
+        school: "PM SHRI KV CMERI, CITY CENTRE",
         location: "Durgapur, West Bengal"
     }
 };

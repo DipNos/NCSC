@@ -115,9 +115,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         setIfElemExists('credit-role', projectData.credits.role);
         setIfElemExists('credit-guide', projectData.credits.guide);
-        setIfElemExists('credit-class', projectData.credits.class);
+        setIfElemExists('credit-class', projectData.credits.grade);
         setIfElemExists('credit-school', projectData.credits.school);
         setIfElemExists('credit-location', projectData.credits.location);
     }
-
-}); // Closes DOMContentLoaded at the very end of the file
+});
