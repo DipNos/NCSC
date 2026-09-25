@@ -4,30 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustainable Indian Architecture | School Project</title>
-
-    <!-- Elegant Typography: Playfair Display for headings, Lora for body -->
+    <title>Sustainable Architecture & Energy Efficiency | NCSC Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Chart.js CDN here -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
 </head>
 
 <body>
 
     <nav id="navbar">
         <div class="nav-container">
-            <div class="logo" id="nav-logo">Project 2026</div>
+            <div class="logo" id="nav-logo">NCSC 2026</div>
             <ul class="nav-links">
-                <li><a href="#abstract">Abstract</a></li>
-                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#introduction">Intro</a></li>
+                <li><a href="#problem-need">Problem</a></li>
+                <li><a href="#objectives-hypothesis">Objectives</a></li>
                 <li><a href="#sdgs">SDGs</a></li>
                 <li><a href="#methodology">Methodology</a></li>
-                <li><a href="#study-area">Study Area</a></li>
-                <li><a href="#findings">Findings</a></li>
+                <li><a href="#survey">Survey</a></li>
+                <li><a href="#observations">Observations</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#references">References</a></li>
             </ul>
         </div>
     </nav>
@@ -41,7 +46,6 @@
     </header>
 
     <main>
-        <!-- Editorial Layout: Introduction -->
         <section id="introduction" class="section bg-alt">
             <div class="container split-layout">
                 <div class="section-header">
@@ -52,21 +56,19 @@
             </div>
         </section>
 
-        <!-- Two Column Text: Problem & Need -->
         <section id="problem-need" class="section">
             <div class="container grid-2">
                 <div class="text-block">
-                    <h3>Problem Identification</h3>
+                    <h3 class="bold-header"><strong>Problem Identification</strong></h3>
                     <div id="content-problem"></div>
                 </div>
                 <div class="text-block">
-                    <h3>Need of the Study</h3>
+                    <h3 class="bold-header"><strong>Need of the Study</strong></h3>
                     <div id="content-need"></div>
                 </div>
             </div>
         </section>
 
-        <!-- Objectives & Hypothesis -->
         <section id="objectives-hypothesis" class="section bg-alt">
             <div class="container split-layout">
                 <div class="section-header">
@@ -80,115 +82,282 @@
             </div>
         </section>
 
-        <!-- SDGs Grid -->
         <section id="sdgs" class="section">
             <div class="container">
                 <div class="centered-header">
                     <span class="section-number">03</span>
                     <h2>Sustainable Development Goals</h2>
-                    <p class="intro-text">How traditional principles align with modern global targets.</p>
+                    <p class="intro-text">How traditional architecture aligns with UN global targets.</p>
                 </div>
-                <div class="sdg-grid" id="content-sdgs"></div>
+                <div id="sdgs-grid" class="sdgs-grid"></div>
             </div>
         </section>
 
-        <!-- Timeline: Methodology -->
-        <section id="methodology" class="section bg-alt">
-            <div class="container split-layout">
-                <div class="section-header">
+       <!-- 04. Study Area & Methodology -->
+        <section id="methodology" class="section">
+            <div class="container">
+                <div class="centered-header">
                     <span class="section-number">04</span>
-                    <h2>Methodology</h2>
+                    <h2>Study Area & Methodology</h2>
+                    <p class="intro-text">
+                        The study focuses on Durgapur, West Bengal—a planned industrial city with hot summers and seasonal rainfall. Its climate makes natural ventilation, shading, courtyards, orientation, and thermal insulation critically important.
+                    </p>
                 </div>
-                <div class="section-content">
-                    <div class="timeline" id="content-methodology"></div>
+
+                <!-- Study Area Maps Container -->
+                <div class="study-area-maps">
+                    <div class="map-card">
+                        <img src="images/map1.png" alt="Study Area Location Map">
+                        <p>Durgapur Location Map</p>
+                    </div>
+                    <div class="map-card">
+                        <img src="images/map2.png" alt="Survey Site Layout Map">
+                        <p>Survey Site Layout Map</p>
+                    </div>
+                </div>
+
+                <!-- Process Flow Ribbon -->
+                <div class="flow-ribbon">
+                    <span>Topic Selection</span> &rarr; 
+                    <span>Background Study</span> &rarr; 
+                    <span>Durgapur Selection</span> &rarr; 
+                    <span>Field Observation</span> &rarr; 
+                    <span>Survey</span> &rarr; 
+                    <span>Data Prep</span> &rarr; 
+                    <span>Analysis</span> &rarr; 
+                    <span>Conclusion</span>
+                </div>
+
+                <!-- 8-Card Grid -->
+                <div class="methodology-8-grid">
+                    <div class="info-card"><span class="info-label">STEP 01</span><h4>Selection of Topic</h4><p>Chosen 'The Timeless Heritage of Sustainable Indian Architecture' to examine traditional passive cooling principles in modern housing.</p></div>
+                    <div class="info-card"><span class="info-label">STEP 02</span><h4>Background Study</h4><p>Researched traditional features like courtyards, verandahs, jaalis, thick thermal walls, overhang shading, and natural ventilation.</p></div>
+                    <div class="info-card"><span class="info-label">STEP 03</span><h4>Selection of Study Area</h4><p>Selected Durgapur, West Bengal due to its combination of modern planned residential developments and extensive local greenery.</p></div>
+                    <div class="info-card"><span class="info-label">STEP 04</span><h4>Field Observation</h4><p>Personally visited residential areas in Durgapur, noting window dimensions, shading overhangs, open spaces, and taking photographs.</p></div>
+                    <div class="info-card"><span class="info-label">STEP 05</span><h4>Survey of Residents</h4><p>Prepared and conducted a detailed questionnaire survey among 20+ local families on Sept 4, 2026, to assess public awareness.</p></div>
+                    <div class="info-card"><span class="info-label">STEP 06</span><h4>Data Collection & Prep</h4><p>Organized field observations and questionnaire survey responses into structured datasets to identify common architectural patterns.</p></div>
+                    <div class="info-card"><span class="info-label">STEP 07</span><h4>Analysis of Findings</h4><p>Compared field evidence and survey data against background literature to pinpoint which passive cooling methods remain effective.</p></div>
+                    <div class="info-card"><span class="info-label">STEP 08</span><h4>Drawing Conclusions</h4><p>Evaluated core hypotheses and outlined practical design recommendations for integrating heritage architecture into modern builds.</p></div>
                 </div>
             </div>
         </section>
 
-        <!-- Area of Study & Imagery -->
-        <section id="study-area" class="section">
+                <!-- Process Flow Ribbon -->
+                <div class="flow-ribbon">
+                    <span>Topic Selection</span> &rarr; 
+                    <span>Background Study</span> &rarr; 
+                    <span>Durgapur Selection</span> &rarr; 
+                    <span>Field Observation</span> &rarr; 
+                    <span>Survey</span> &rarr; 
+                    <span>Data Prep</span> &rarr; 
+                    <span>Analysis</span> &rarr; 
+                    <span>Conclusion</span>
+                </div>
+
+                <!-- 8-Card Grid -->
+                <div class="methodology-8-grid">
+                    <div class="info-card"><span class="info-label">STEP 01</span><h4>Selection of Topic</h4><p>Chosen 'The Timeless Heritage of Sustainable Indian Architecture' to examine traditional passive cooling principles in modern housing.</p></div>
+                    <div class="info-card"><span class="info-label">STEP 02</span><h4>Background Study</h4><p>Researched traditional features like courtyards, verandahs, jaalis, thick thermal walls, overhang shading, and natural ventilation.</p></div>
+                    <div class="info-card"><span class="info-label">STEP 03</span><h4>Selection of Study Area</h4><p>Selected Durgapur, West Bengal due to its combination of modern planned residential developments and extensive local greenery.</p></div>
+                    <div class="info-card"><span class="info-label">STEP 04</span><h4>Field Observation</h4><p>Personally visited residential areas in Durgapur, noting window dimensions, shading overhangs, open spaces, and taking photographs.</p></div>
+                    <div class="info-card"><span class="info-label">STEP 05</span><h4>Survey of Residents</h4><p>Prepared and conducted a detailed questionnaire survey among 20+ local families on Sept 4, 2026, to assess public awareness.</p></div>
+                    <div class="info-card"><span class="info-label">STEP 06</span><h4>Data Collection & Prep</h4><p>Organized field observations and questionnaire survey responses into structured datasets to identify common architectural patterns.</p></div>
+                    <div class="info-card"><span class="info-label">STEP 07</span><h4>Analysis of Findings</h4><p>Compared field evidence and survey data against background literature to pinpoint which passive cooling methods remain effective.</p></div>
+                    <div class="info-card"><span class="info-label">STEP 08</span><h4>Drawing Conclusions</h4><p>Evaluated core hypotheses and outlined practical design recommendations for integrating heritage architecture into modern builds.</p></div>
+                </div>
+            </div>
+        </section>
+
+       <!-- 05. Primary Field Survey -->
+        <section id="survey" class="section">
             <div class="container">
                 <div class="centered-header">
                     <span class="section-number">05</span>
-                    <h2>Area of Study: Durgapur</h2>
-                    <p class="intro-text" id="content-area"></p>
+                    <h2>Questionnaire Survey Results</h2>
+                    <p class="intro-text">Key findings from primary field survey conducted in Durgapur (n = 30+)</p>
                 </div>
 
-                <div class="image-gallery">
-                    <figure>
-                        <!-- Replace src with your actual image path -->
-                        <img src="images/map-durgapur.jpg" alt="Map of Durgapur" class="placeholder-img">
-                        <figcaption>Fig 1. Map of Durgapur highlighting survey areas.</figcaption>
-                    </figure>
-                    <figure>
-                        <!-- Replace src with your actual image path -->
-                        <img src="images/survey-interaction.jpg" alt="Survey Interaction" class="placeholder-img">
-                        <figcaption>Fig 2. Personal interaction during the questionnaire-based survey.</figcaption>
-                    </figure>
+                <div class="survey-pie-grid">
+                    <!-- Question 1 -->
+                    <div class="pie-card">
+                        <div class="question-box">1. What type of house do you live in?</div>
+                        <div class="chart-wrapper">
+                            <canvas id="surveyChart1"></canvas>
+                        </div>
+                        <span class="sample-size">(n = 30+)</span>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="pie-card">
+                        <div class="question-box">2. How would you describe the temperature inside your house during summer?</div>
+                        <div class="chart-wrapper">
+                            <canvas id="surveyChart2"></canvas>
+                        </div>
+                        <span class="sample-size">(n = 30+)</span>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="pie-card">
+                        <div class="question-box">3. What methods do you currently use to keep your house cool?</div>
+                        <div class="chart-wrapper">
+                            <canvas id="surveyChart3"></canvas>
+                        </div>
+                        <span class="sample-size">(n = 30+)</span>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="pie-card">
+                        <div class="question-box">4. Which feature do you think is most effective in keeping a house naturally cool?</div>
+                        <div class="chart-wrapper">
+                            <canvas id="surveyChart4"></canvas>
+                        </div>
+                        <span class="sample-size">(n = 30+)</span>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="pie-card">
+                        <div class="question-box">5. Would you be interested in using traditional architectural ideas in modern buildings?</div>
+                        <div class="chart-wrapper">
+                            <canvas id="surveyChart5"></canvas>
+                        </div>
+                        <span class="sample-size">(n = 30+)</span>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="pie-card">
+                        <div class="question-box">6. What is the most important reason for using natural cooling methods?</div>
+                        <div class="chart-wrapper">
+                            <canvas id="surveyChart6"></canvas>
+                        </div>
+                        <span class="sample-size">(n = 30+)</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Results: Statistics Highlights -->
-        <section id="findings" class="section bg-alt">
+<!-- 07. Project Photo Gallery -->
+        <section id="gallery" class="section bg-alt">
             <div class="container">
                 <div class="centered-header">
-                    <span class="section-number">06</span>
-                    <h2>Results & Analysis</h2>
-                    <p class="intro-text">Data collected from 20 families in Durgapur.</p>
-                </div>
-                <div class="stats-container" id="content-stats"></div>
-            </div>
-        </section>
-
-        <!-- Editorial: Conclusion -->
-        <section id="conclusion" class="section">
-            <div class="container split-layout">
-                <div class="section-header">
                     <span class="section-number">07</span>
-                    <h2>Conclusion & Future Plan</h2>
+                    <h2>Project Photo Gallery</h2>
+                    <p class="intro-text">Field observation photos of residential architecture in Durgapur</p>
                 </div>
-                <div class="section-content">
-                    <div id="content-future" class="margin-bottom-large"></div>
-                    <div id="content-conclusion" class="highlight-text"></div>
+
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Card 1 -->
+                    <div class="gallery-card">
+                        <img src="images/house1.png" alt="Traditional House Architecture">
+                        <div class="gallery-info">
+                            <h4>Traditional House Architecture</h4>
+                            <p>Observing passive cooling, verandah overhangs, and thermal mass.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="gallery-card">
+                        <img src="images/house2.png" alt="Passive Ventilation">
+                        <div class="gallery-info">
+                            <h4>Passive Ventilation & Courtyards</h4>
+                            <p>Central courtyard design facilitating natural stack ventilation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="gallery-card">
+                        <img src="images/house3.png" alt="Shading Design">
+                        <div class="gallery-info">
+                            <h4>Shading & Overhang Design</h4>
+                            <p>Deep roof overhangs blocking direct summer solar radiation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="gallery-card">
+                        <img src="images/house4.png" alt="Large Apartments">
+                        <div class="gallery-info">
+                            <h4>Large Apartments around open spaces </h4>
+                            <p>Apartments designed around open spaces for better ventilation and community interaction.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="gallery-card">
+                        <img src="images/house5.png" alt="Greenery Buffer">
+                        <div class="gallery-info">
+                            <h4>Greenery & Microclimate Control</h4>
+                            <p>Surrounding vegetation acting as a natural heat buffer.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="gallery-card">
+                        <img src="images/house6.png" alt="Thermal Mass">
+                        <div class="gallery-info">
+                            <h4>Thermal Mass & Wall Materials</h4>
+                            <p>Thick wall construction helping regulate indoor temperatures.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="gallery-card">
+                        <img src="images/house7.png" alt="Verandah Spaces">
+                        <div class="gallery-info">
+                            <h4>Semi-Open Spaces & Verandahs</h4>
+                            <p>Transition spaces reducing heat gain before entering core living areas.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- References -->
-        <section id="references" class="section bg-dark">
+        <section id="conclusion" class="section bg-alt">
+            <div class="container grid-2">
+                <div class="text-block">
+                    <h3 class="bold-header"><strong>Future Scope & Recommendations</strong></h3>
+                    <div id="content-future"></div>
+                </div>
+                <div class="text-block">
+                    <h3 class="bold-header"><strong>Conclusion</strong></h3>
+                    <div id="content-conclusion" class="hypothesis-box"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="references" class="section">
             <div class="container">
-                <h3>References</h3>
-                <ol id="content-references" class="reference-list"></ol>
+                <div class="centered-header">
+                    <span class="section-number">08</span>
+                    <h2>References & Literature</h2>
+                </div>
+                <ul id="references-list" class="references-list"></ul>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container footer-content">
+        <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Presented By</h4>
-                    <p>Dipenshu Sahoo</p>
-                    <p>Arnab Bhattacharya</p>
-                    <span id="credit-role" class="sub-text">Student Leads & Researchers</span>
+                    <h4>Student Researchers</h4>
+                    <p id="footer-author"></p>
+                    <span class="sub-text" id="footer-role"></span>
                 </div>
                 <div class="footer-col">
-                    <h4>Guided By</h4>
-                    <p id="credit-guide">Mr. Samar Bahadur Mallah</p>
-                    <span id="credit-class" class="sub-text">Class XI</span>
+                    <h4>Guide Teacher</h4>
+                    <p id="footer-guide"></p>
                 </div>
                 <div class="footer-col">
-                    <h4>Institution & Location</h4>
-                    <p id="credit-school">PM SHRI KV CMERI, CITY CENTRE</p>
-                    <span id="credit-location" class="sub-text">Durgapur, West Bengal</span>
+                    <h4>Institution</h4>
+                    <p id="footer-school"></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 School Science Project Presentation. All rights reserved.</p>
+                <p>&copy; 2026 National Children's Science Congress Project.</p>
             </div>
         </div>
     </footer>
+
     <script src="data.js"></script>
     <script src="script.js"></script>
 </body>

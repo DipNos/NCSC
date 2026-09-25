@@ -509,3 +509,522 @@ footer {
     font-size: 0.85rem;
     color: #888883;
 }
+
+/* --- ADD AT THE VERY END OF style.css --- */
+
+/* Survey Info Cards */
+.survey-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.info-card {
+    background-color: #1e293b;
+    padding: 1.2rem 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #38bdf8;
+    border-top: 1px solid #334155;
+    border-right: 1px solid #334155;
+    border-bottom: 1px solid #334155;
+}
+
+.info-label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #94a3b8;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.3rem;
+}
+
+.info-val {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.subsection-title {
+    font-size: 1.25rem;
+    color: #f8fafc;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Field Observations Cards */
+.observations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.obs-card {
+    background-color: #1e293b;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    border-top: 3px solid #38bdf8;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.obs-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.obs-card h3 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+.obs-card p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    line-height: 1.55;
+}
+
+/* Footer High-Contrast Override */
+footer {
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 3.5rem 0 1.5rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid #334155;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #1e293b;
+}
+
+.footer-col h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #38bdf8;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.footer-col p {
+    font-size: 1.05rem;
+    color: #ffffff;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.footer-col .sub-text {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+.footer-bottom {
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+/* Fix header overlap and spacing */
+.survey-info-grid,
+.observations-grid {
+    margin-top: 2.5rem;
+    position: relative;
+    clear: both;
+}
+/* ===================================================
+   FIX: Card Text Visibility & Header Spacing
+   =================================================== */
+
+/* Ensure dark cards have bright, readable text */
+.info-card, 
+.obs-card, 
+.stat-card, 
+.sdg-card, 
+.gallery-card {
+    background-color: #1a2b3c !important;
+    color: #ffffff !important;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Titles */
+.info-card h4, 
+.obs-card h3, 
+.stat-card h3, 
+.sdg-card h3, 
+.gallery-info h4 {
+    color: #f8fafc !important;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Card Subtitles / Labels */
+.info-label, 
+.sdg-goal {
+    color: #38bdf8 !important; /* Sky blue highlight */
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Card Descriptions / Body Text */
+.info-card p, 
+.obs-card p, 
+.stat-card p, 
+.sdg-card p, 
+.gallery-info p {
+    color: #cbd5e1 !important; /* Clean soft white text */
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Fix Header Overlapping & Grid Collapsing */
+.section {
+    padding: 60px 0;
+    clear: both;
+}
+
+.centered-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.survey-info-grid, 
+.observations-grid, 
+.sdgs-grid, 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+/* Gallery Image Wrapper */
+.gallery-image-wrapper {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    background-color: #334155;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* ===================================================
+   SURVEY STATS CIRCLE CHARTS
+   =================================================== */
+.survey-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.stat-circle-card {
+    background: #1b2a3a;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-circle-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    border-color: #38bdf8;
+}
+
+.circle-chart {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 20px;
+}
+
+.circular-chart {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #2a3e52;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 3.8;
+    stroke-linecap: round;
+    animation: progress 1.5s ease-out forwards;
+}
+
+.circular-chart.sky .circle {
+    stroke: #38bdf8;
+}
+
+.percentage {
+    fill: #ffffff;
+    font-family: inherit;
+    font-size: 0.5rem;
+    font-weight: 700;
+    text-anchor: middle;
+}
+
+.stat-label {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+}
+/* Bold Headings Fix */
+.bold-header, 
+.bold-header strong {
+    font-weight: 700 !important;
+    font-size: 1.4rem !important;
+    color: #01080b !important; /* Accent sky blue for headings */
+    margin-bottom: 16px;
+    display: inline-block;
+}
+/* ===================================================
+   SURVEY PIE CHART GRID LAYOUT
+   =================================================== */
+.survey-pie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.pie-card {
+    background: #1a2b3c;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.question-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 14px;
+    width: 100%;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.chart-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.sample-size {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-style: italic;
+}
+/* ===================================================
+   METHODOLOGY SECTION & GRID BALANCE FIX
+   =================================================== */
+
+/* Center and balance intro text */
+#methodology p,
+#methodology .intro-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 36px auto;
+    line-height: 1.7;
+    color: #475569;
+}
+
+/* Flex layout to naturally center 5 cards (3 top, 2 centered bottom) */
+.methodology-grid,
+#methodology .grid-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 24px !important;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Ensure cards maintain consistent width and balance */
+.methodology-grid .info-card,
+.methodology-grid .step-card,
+#methodology .card {
+    flex: 1 1 280px !important;
+    max-width: 340px !important;
+    min-width: 260px !important;
+}
+/* ===================================================
+   8-STEP METHODOLOGY GRID & FLOW RIBBON
+   =================================================== */
+
+.flow-ribbon {
+    background: #1a2b3c;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 8px;
+    padding: 14px 20px;
+    text-align: center;
+    color: #cbd5e1;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 32px;
+    line-height: 1.8;
+}
+
+.flow-ribbon span {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.methodology-8-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* On desktop screens, force a clean 4x2 matrix */
+@media (min-width: 1024px) {
+    .methodology-8-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* ===================================================
+   GALLERY GRID & IMAGE OVERFLOW FIX
+   =================================================== */
+
+.gallery-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 24px !important;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.gallery-card {
+    background: #1a2b3c;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden !important; /* Clips images cleanly inside card borders */
+    display: flex !important;
+    flex-direction: column !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-card img {
+    width: 100% !important;
+    height: 220px !important; /* Uniform height across all cards */
+    object-fit: cover !important; /* Prevents distortion and cropping leaks */
+    display: block !important;
+}
+
+.gallery-info {
+    padding: 18px;
+    flex-grow: 1;
+    background: #1a2b3c;
+}
+
+.gallery-info h4 {
+    color: #ffffff;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+}
+
+.gallery-info p {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0;
+}
+/* ===================================================
+   STUDY AREA MAP CARDS IN SECTION 04
+   =================================================== */
+.study-area-maps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.map-card {
+    background: #1a2b3c;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 1 1 300px;
+    max-width: 480px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.map-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.map-card p {
+    padding: 10px 14px;
+    margin: 0;
+    color: #38bdf8;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.03);
+}
+/* Fix low contrast text on map cards */
+.map-card p {
+    color: #ffffff !important;          /* Crisp white text for maximum readability */
+    font-weight: 600 !important;         /* Semi-bold text */
+    font-size: 0.95rem !important;       /* Slightly larger text size */
+    letter-spacing: 0.5px !important;    /* Clean spacing */
+    background: #0f172a !important;      /* Darker footer bar to enhance contrast */
+    padding: 12px 16px !important;
+    margin: 0 !important;
+}

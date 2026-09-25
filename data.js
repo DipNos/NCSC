@@ -66,8 +66,51 @@ const projectData = {
         { title: "Background Study", desc: "Collected information on traditional features like courtyards, jaalis, and climate-based design." },
         { title: "Selection of Study Area", desc: "Durgapur, West Bengal, was selected due to its mix of modern residential buildings and varying housing patterns." },
         { title: "Field Observation", desc: "Visited and observed residential buildings in Durgapur. Noted features like window size, shading, open spaces, and vegetation." },
-        { title: "Survey of Residents", desc: "Conducted a questionnaire survey on Sept 4, 2026, among 20 families to understand public awareness." },
+        { title: "Survey of Residents", desc: "Conducted a questionnaire survey on Sept 4, 2026, among 30+ families and local people to understand public awareness." },
         { title: "Analysis & Conclusion", desc: "Compared field observations and survey responses with researched principles to evaluate the hypothesis." }
+    ],
+
+    methodologySteps: [
+        {
+            step: "STEP 01",
+            title: "Selection of Topic",
+            desc: "Chosen 'The Timeless Heritage of Sustainable Indian Architecture' to examine traditional passive cooling principles in modern housing."
+        },
+        {
+            step: "STEP 02",
+            title: "Background Study",
+            desc: "Researched traditional features like courtyards, verandahs, jaalis, thick thermal walls, overhang shading, and natural ventilation."
+        },
+        {
+            step: "STEP 03",
+            title: "Selection of Study Area",
+            desc: "Selected Durgapur, West Bengal due to its combination of modern planned residential developments and extensive local greenery."
+        },
+        {
+            step: "STEP 04",
+            title: "Field Observation",
+            desc: "Personally visited residential areas in Durgapur, noting window dimensions, shading overhangs, open spaces, and taking photographs."
+        },
+        {
+            step: "STEP 05",
+            title: "Survey of Residents",
+            desc: "Prepared and conducted a detailed questionnaire survey among 20+ local families on Sept 4, 2026, to assess public awareness."
+        },
+        {
+            step: "STEP 06",
+            title: "Data Collection & Prep",
+            desc: "Organized field observations and questionnaire survey responses into structured datasets to identify common architectural patterns."
+        },
+        {
+            step: "STEP 07",
+            title: "Analysis of Findings",
+            desc: "Compared field evidence and survey data against background literature to pinpoint which passive cooling methods remain effective."
+        },
+        {
+            step: "STEP 08",
+            title: "Drawing Conclusions",
+            desc: "Evaluated core hypotheses and outlined practical design recommendations for integrating heritage architecture into modern builds."
+        }
     ],
 
     studyArea: "The study focuses on Durgapur, West Bengal, a planned industrial city with hot summers and seasonal rainfall. Its climate makes natural ventilation, shading, courtyards, orientation, and thermal insulation critically important.",
@@ -77,6 +120,63 @@ const projectData = {
         { value: "100%", label: "Want to reduce dependence on artificial cooling" },
         { value: "93%", label: "Believe traditional methods can reduce energy use" },
         { value: "80%", label: "Prefer combining traditional methods with modern tech" }
+    ],
+
+    fieldObservations: [
+        {
+            title: "Wall Thickness & Thermal Mass",
+            details: "Traditional brick masonry and thick walls (300–450mm) significantly delay heat transfer, keeping rooms noticeably cooler during peak afternoon hours."
+        },
+        {
+            title: "Verandahs & Deep Shading",
+            details: "Overhanging eaves and shaded outer corridors effectively prevent direct solar radiation from striking window glass and interior walls."
+        },
+        {
+            title: "Cross-Ventilation Alignment",
+            details: "Opposing window openings aligned with the prevailing South-East summer winds create continuous passive air movement across living areas."
+        },
+        {
+            title: "High Ceilings & Stack Effect",
+            details: "Vertical air space allows hot air to rise away from floor level, keeping the lower living zone comfortable without active mechanical cooling."
+        }
+    ],
+
+    galleryItems: [
+        {
+            title: "Traditional House Architecture",
+            desc: "Observing passive cooling, verandah overhangs, and thermal mass.",
+            image: "images/house1.png"
+        },
+        {
+            title: "Passive Ventilation & Courtyards",
+            desc: "Central courtyard design facilitating natural stack ventilation.",
+            image: "images/house2.png"
+        },
+        {
+            title: "Shading & Overhang Design",
+            desc: "Deep roof overhangs blocking direct summer solar radiation.",
+            image: "images/house3.png"
+        },
+        {
+            title: "Large Apartments around open spaces",
+            desc: "Apartments designed around open spaces for better ventilation and community interaction.",
+            image: "images/house4.png"
+        },
+        {
+            title: "Greenery & Microclimate Control",
+            desc: "Surrounding vegetation acting as a natural heat buffer.",
+            image: "images/house5.png"
+        },
+        {
+            title: "Thermal Mass & Wall Materials",
+            desc: "Thick wall construction helping regulate indoor temperatures.",
+            image: "images/house6.png"
+        },
+        {
+            title: "Semi-Open Spaces & Verandahs",
+            desc: "Transition spaces reducing heat gain before entering core living areas.",
+            image: "images/house7.png"
+        }
     ],
 
     future: `
