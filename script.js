@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             tooltip: {
                 callbacks: {
-                    label: function(context) {
+                    label: function (context) {
                         return ` ${context.label}: ${context.raw}%`;
                     }
                 }

@@ -634,6 +634,7 @@ footer {
     font-size: 0.85rem;
     color: #64748b;
 }
+
 /* Fix header overlap and spacing */
 .survey-info-grid,
 .observations-grid {
@@ -641,15 +642,16 @@ footer {
     position: relative;
     clear: both;
 }
+
 /* ===================================================
    FIX: Card Text Visibility & Header Spacing
    =================================================== */
 
 /* Ensure dark cards have bright, readable text */
-.info-card, 
-.obs-card, 
-.stat-card, 
-.sdg-card, 
+.info-card,
+.obs-card,
+.stat-card,
+.sdg-card,
 .gallery-card {
     background-color: #1a2b3c !important;
     color: #ffffff !important;
@@ -659,10 +661,10 @@ footer {
 }
 
 /* Card Titles */
-.info-card h4, 
-.obs-card h3, 
-.stat-card h3, 
-.sdg-card h3, 
+.info-card h4,
+.obs-card h3,
+.stat-card h3,
+.sdg-card h3,
 .gallery-info h4 {
     color: #f8fafc !important;
     font-size: 1.25rem;
@@ -671,9 +673,10 @@ footer {
 }
 
 /* Card Subtitles / Labels */
-.info-label, 
+.info-label,
 .sdg-goal {
-    color: #38bdf8 !important; /* Sky blue highlight */
+    color: #38bdf8 !important;
+    /* Sky blue highlight */
     font-weight: 700;
     font-size: 0.85rem;
     text-transform: uppercase;
@@ -683,12 +686,13 @@ footer {
 }
 
 /* Card Descriptions / Body Text */
-.info-card p, 
-.obs-card p, 
-.stat-card p, 
-.sdg-card p, 
+.info-card p,
+.obs-card p,
+.stat-card p,
+.sdg-card p,
 .gallery-info p {
-    color: #cbd5e1 !important; /* Clean soft white text */
+    color: #cbd5e1 !important;
+    /* Clean soft white text */
     font-size: 0.95rem;
     line-height: 1.6;
 }
@@ -704,9 +708,9 @@ footer {
     text-align: center;
 }
 
-.survey-info-grid, 
-.observations-grid, 
-.sdgs-grid, 
+.survey-info-grid,
+.observations-grid,
+.sdgs-grid,
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -729,6 +733,7 @@ footer {
     object-fit: cover;
     display: block;
 }
+
 /* ===================================================
    SURVEY STATS CIRCLE CHARTS
    =================================================== */
@@ -803,15 +808,18 @@ footer {
         stroke-dasharray: 0, 100;
     }
 }
+
 /* Bold Headings Fix */
-.bold-header, 
+.bold-header,
 .bold-header strong {
     font-weight: 700 !important;
     font-size: 1.4rem !important;
-    color: #01080b !important; /* Accent sky blue for headings */
+    color: #01080b !important;
+    /* Accent sky blue for headings */
     margin-bottom: 16px;
     display: inline-block;
 }
+
 /* ===================================================
    SURVEY PIE CHART GRID LAYOUT
    =================================================== */
@@ -831,7 +839,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .question-box {
@@ -865,6 +873,7 @@ footer {
     color: #94a3b8;
     font-style: italic;
 }
+
 /* ===================================================
    METHODOLOGY SECTION & GRID BALANCE FIX
    =================================================== */
@@ -898,6 +907,7 @@ footer {
     max-width: 340px !important;
     min-width: 260px !important;
 }
+
 /* ===================================================
    8-STEP METHODOLOGY GRID & FLOW RIBBON
    =================================================== */
@@ -934,6 +944,7 @@ footer {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
 /* ===================================================
    GALLERY GRID & IMAGE OVERFLOW FIX
    =================================================== */
@@ -950,7 +961,8 @@ footer {
     background: #1a2b3c;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    overflow: hidden !important; /* Clips images cleanly inside card borders */
+    overflow: hidden !important;
+    /* Clips images cleanly inside card borders */
     display: flex !important;
     flex-direction: column !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -958,8 +970,10 @@ footer {
 
 .gallery-card img {
     width: 100% !important;
-    height: 220px !important; /* Uniform height across all cards */
-    object-fit: cover !important; /* Prevents distortion and cropping leaks */
+    height: 220px !important;
+    /* Uniform height across all cards */
+    object-fit: cover !important;
+    /* Prevents distortion and cropping leaks */
     display: block !important;
 }
 
@@ -981,6 +995,7 @@ footer {
     line-height: 1.5;
     margin: 0;
 }
+
 /* ===================================================
    STUDY AREA MAP CARDS IN SECTION 04
    =================================================== */
@@ -1000,7 +1015,7 @@ footer {
     flex: 1 1 300px;
     max-width: 480px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .map-card img {
@@ -1018,13 +1033,19 @@ footer {
     font-weight: 600;
     background: rgba(255, 255, 255, 0.03);
 }
+
 /* Fix low contrast text on map cards */
 .map-card p {
-    color: #ffffff !important;          /* Crisp white text for maximum readability */
-    font-weight: 600 !important;         /* Semi-bold text */
-    font-size: 0.95rem !important;       /* Slightly larger text size */
-    letter-spacing: 0.5px !important;    /* Clean spacing */
-    background: #0f172a !important;      /* Darker footer bar to enhance contrast */
+    color: #ffffff !important;
+    /* Crisp white text for maximum readability */
+    font-weight: 600 !important;
+    /* Semi-bold text */
+    font-size: 0.95rem !important;
+    /* Slightly larger text size */
+    letter-spacing: 0.5px !important;
+    /* Clean spacing */
+    background: #0f172a !important;
+    /* Darker footer bar to enhance contrast */
     padding: 12px 16px !important;
     margin: 0 !important;
 }
