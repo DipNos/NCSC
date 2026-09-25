@@ -1,14 +1,14 @@
 // script.js - Logic and DOM manipulation
 
 document.addEventListener("DOMContentLoaded", () => {
-    
+
     // --- 1. POPULATE DATA FROM data.js ---
-    
+
     // Hero Section
     document.getElementById('hero-title').innerText = projectData.hero.title;
     document.getElementById('hero-subtitle').innerText = projectData.hero.subtitle;
     document.getElementById('hero-abstract').innerText = projectData.hero.abstract;
-    
+
     // Text Blocks
     document.getElementById('content-intro').innerHTML = projectData.introduction;
     document.getElementById('content-problem').innerHTML = projectData.problem;
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // --- 2. INTERACTION: SCROLL REVEAL ANIMATIONS ---
-    
+
     // Add 'reveal' class to sections for the CSS transition
     const sections = document.querySelectorAll('section, .hero-content');
     sections.forEach(sec => sec.classList.add('reveal'));
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
         rootMargin: "0px 0px -50px 0px"
     };
 
-    const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+    const revealOnScroll = new IntersectionObserver(function (entries, observer) {
         entries.forEach(entry => {
             if (!entry.isIntersecting) return;
             entry.target.classList.add('active');
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // --- 3. INTERACTION: SUBTLE NAVBAR SHADOW ON SCROLL ---
-    
+
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -106,4 +106,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-});
+    // Populate Credits safely from data.js
+    if (typeof projectData !== 'undefined' && projectData.credits) {
+        const setIfElemExists = (id, value) => {
+            const elem = document.getElementById(id);
+            if (elem) elem.innerText = value;
+        };
+
+        setIfElemExists('credit-role', projectData.credits.role);
+        setIfElemExists('credit-guide', projectData.credits.guide);
+        setIfElemExists('credit-class', projectData.credits.class);
+        setIfElemExists('credit-school', projectData.credits.school);
+        setIfElemExists('credit-location', projectData.credits.location);
+    }
+
+}); // Closes DOMContentLoaded at the very end of the file

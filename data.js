@@ -6,13 +6,13 @@ const projectData = {
         subtitle: "A Study of Traditional Practices in Modern Durgapur",
         abstract: "This project studies the sustainable ideas found in traditional Indian Architecture and examines how these ideas can be useful in present-day buildings. Indian buildings were often designed according to the local climate, available materials, and everyday needs. The objective is to understand these practices and identify principles applicable today for reducing energy use."
     },
-    
+
     introduction: `
         <p>Architecture plays an important role in shaping the way people live and interact with their environment. In recent years, increasing energy consumption, environmental degradation, and the effects of climate change have created a growing need for buildings that are more sustainable and energy-efficient.</p>
         <p>Traditional Indian architecture reflects a close relationship between buildings, climate, available resources, and the everyday needs of communities. Before the widespread use of mechanical cooling and artificial lighting, buildings were often designed to provide comfort through passive methods.</p>
         <p>Features such as courtyards, jaalis, verandas, thick walls, appropriate building orientation, natural ventilation, shading devices, and locally available materials helped regulate temperature, airflow, sunlight, and water use.</p>
     `,
-    
+
     problem: `
         <p>Modern buildings are becoming more dependent on air conditioners, artificial lighting, and other electrical systems to provide comfort. In cities like Durgapur, most houses are built using modern concrete construction.</p>
         <p>While many houses still have features like large windows or balconies that help with ventilation, they are not always planned specifically to reduce energy use. The problem is how to effectively re-integrate traditional architectural ideas into modern buildings.</p>
@@ -93,5 +93,13 @@ const projectData = {
         "Bureau of Energy Efficiency (BEE) – Passive design strategies, shading and natural ventilation.",
         "Field Survey and Personal Observations – Houses and residential areas observed in Durgapur, West Bengal.",
         "Survey Responses – Primary information collected on 4 September 2026."
-    ]
+    ],
+
+    credits: {
+        author: "Dipenshu Sahoo & Arnab Bhattacharya",
+        role: "Student Lead & Lead Researcher",
+        guide: "Guide Teacher Name: Mr.Samar Bahadur Mallah",
+        school: "School Name:PM SHRI KV CMERI, CITY CENTRE",
+        location: "Durgapur, West Bengal"
+    }
 };

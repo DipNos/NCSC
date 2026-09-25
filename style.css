@@ -1,16 +1,20 @@
 /* --- CSS VARIABLES --- */
 :root {
-    --bg-main: #FDFDFB; /* Warm, off-white paper feel */
-    --bg-alt: #F4F2EC; /* Slightly darker earthy tone */
-    --bg-dark: #2A2D27; /* Dark olive/charcoal for contrast */
+    --bg-main: #FDFDFB;
+    /* Warm, off-white paper feel */
+    --bg-alt: #F4F2EC;
+    /* Slightly darker earthy tone */
+    --bg-dark: #2A2D27;
+    /* Dark olive/charcoal for contrast */
     --text-main: #333333;
     --text-muted: #5C5E58;
-    --accent: #8E5A35; /* Terracotta / Brick tone */
+    --accent: #8E5A35;
+    /* Terracotta / Brick tone */
     --border-color: #DDDBCB;
-    
+
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
-    
+
     --spacing-sm: 1rem;
     --spacing-md: 2.5rem;
     --spacing-lg: 5rem;
@@ -18,9 +22,16 @@
 }
 
 /* --- RESET & BASE --- */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; font-size: 16px; }
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
 
 body {
     font-family: var(--font-body);
@@ -30,14 +41,19 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--font-heading);
     font-weight: 400;
     line-height: 1.2;
     color: #1A1A1A;
 }
 
-p { margin-bottom: 1.5rem; }
+p {
+    margin-bottom: 1.5rem;
+}
 
 .container {
     max-width: 1100px;
@@ -74,7 +90,8 @@ p { margin-bottom: 1.5rem; }
 /* --- NAVIGATION --- */
 #navbar {
     position: fixed;
-    top: 0; width: 100%;
+    top: 0;
+    width: 100%;
     background-color: rgba(253, 253, 251, 0.95);
     backdrop-filter: blur(5px);
     border-bottom: 1px solid var(--border-color);
@@ -111,7 +128,9 @@ p { margin-bottom: 1.5rem; }
     transition: color 0.2s ease;
 }
 
-.nav-links a:hover { color: var(--accent); }
+.nav-links a:hover {
+    color: var(--accent);
+}
 
 /* --- HERO SECTION --- */
 .hero {
@@ -146,10 +165,23 @@ p { margin-bottom: 1.5rem; }
 }
 
 /* --- SECTIONS & LAYOUTS --- */
-.section { padding: var(--spacing-xl) 0; }
-.bg-alt { background-color: var(--bg-alt); }
-.bg-dark { background-color: var(--bg-dark); color: #FFF; }
-.bg-dark h3, .bg-dark p { color: #FFF; }
+.section {
+    padding: var(--spacing-xl) 0;
+}
+
+.bg-alt {
+    background-color: var(--bg-alt);
+}
+
+.bg-dark {
+    background-color: var(--bg-dark);
+    color: #FFF;
+}
+
+.bg-dark h3,
+.bg-dark p {
+    color: #FFF;
+}
 
 .centered-header {
     text-align: center;
@@ -159,7 +191,10 @@ p { margin-bottom: 1.5rem; }
     align-items: center;
 }
 
-.centered-header h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+.centered-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
 
 /* Editorial Split Layout */
 .split-layout {
@@ -174,9 +209,13 @@ p { margin-bottom: 1.5rem; }
     top: 100px;
 }
 
-.section-header h2 { font-size: 2.5rem; }
+.section-header h2 {
+    font-size: 2.5rem;
+}
 
-.section-content { flex: 2; }
+.section-content {
+    flex: 2;
+}
 
 /* Two Column Grid */
 .grid-2 {
@@ -261,7 +300,10 @@ p { margin-bottom: 1.5rem; }
     border-radius: 50%;
 }
 
-.timeline-item h4 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+.timeline-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
 
 /* Stats Container (Results) */
 .stats-container {
@@ -301,18 +343,23 @@ p { margin-bottom: 1.5rem; }
     margin-top: 2rem;
 }
 
-figure { margin: 0; }
+figure {
+    margin: 0;
+}
 
 .placeholder-img {
     width: 100%;
     height: 350px;
     object-fit: cover;
-    background-color: #E2DFD2; /* Placeholder color if image fails */
+    background-color: #E2DFD2;
+    /* Placeholder color if image fails */
     filter: grayscale(20%);
     transition: filter 0.5s ease;
 }
 
-.placeholder-img:hover { filter: grayscale(0%); }
+.placeholder-img:hover {
+    filter: grayscale(0%);
+}
 
 figcaption {
     margin-top: 0.8rem;
@@ -326,7 +373,11 @@ figcaption {
     padding-left: 1.5rem;
     color: #CCC;
 }
-.reference-list li { margin-bottom: 0.8rem; font-size: 0.95rem; }
+
+.reference-list li {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
 
 /* Animation Classes (Added via JS) */
 .reveal {
@@ -334,6 +385,7 @@ figcaption {
     transform: translateY(30px);
     transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
@@ -341,18 +393,86 @@ figcaption {
 
 /* --- RESPONSIVE DESIGN --- */
 @media (max-width: 900px) {
-    .split-layout { flex-direction: column; gap: 2rem; }
-    .section-header { position: static; margin-bottom: 1rem; }
-    .image-gallery { grid-template-columns: 1fr; }
+    .split-layout {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .section-header {
+        position: static;
+        margin-bottom: 1rem;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
-    .grid-2 { grid-template-columns: 1fr; }
-    .nav-links { display: none; /* Simplification for mobile */ }
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+        /* Simplification for mobile */
+    }
+
     :root {
         --spacing-lg: 3rem;
         --spacing-xl: 4rem;
     }
-    .hero .title { font-size: 2.5rem; }
-    .stat-box { flex: 100%; }
+
+    .hero .title {
+        font-size: 2.5rem;
+    }
+
+    .stat-box {
+        flex: 100%;
+    }
+}
+
+/* --- FOOTER & CREDITS STYLES --- */
+footer {
+    background-color: var(--bg-dark);
+    color: #E2DFD2;
+    padding: var(--spacing-lg) 0 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-col h4 {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 0.8rem;
+}
+
+.footer-col p {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    margin-bottom: 0.2rem;
+}
+
+.footer-col .sub-text {
+    font-size: 0.85rem;
+    color: #A0A29C;
+    display: block;
+}
+
+.footer-bottom {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888883;
 }
